@@ -5,13 +5,13 @@ import java.util.Scanner;
             String StudentName;
             int AdNo;
             int RollNo;
-            String companyName;
+            String CollegeName;
 
-            public Student(String studentName, int adNo, int rollNo, String companyName) {
+            public Student(String studentName, int adNo, int rollNo, String collegeName) {
                 StudentName = studentName;
                 AdNo = adNo;
                 RollNo = rollNo;
-                this.companyName = companyName;
+                this.CollegeName = collegeName;
             }
         }
                 public class Main {
@@ -39,6 +39,17 @@ import java.util.Scanner;
                                         String gh = XY.next();
                                         Student S = new Student(ab, cd, ef, gh);
                                         Studarr.add(S);
+                                        break;
+                                    case 2 :
+                                        System.out.println("Employee Details Showing");
+                                        for (Student std : Studarr) {
+                                            System.out.println("Print Student Details " );
+                                            System.out.println(std.StudentName);
+                                            System.out.println(std.AdNo);
+                                            System.out.println(std.RollNo);
+                                            System.out.println(std.CollegeName);
+
+                                        }
                                         break;
                                 }
                             }

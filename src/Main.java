@@ -51,6 +51,24 @@ import java.util.Scanner;
 
                                         }
                                         break;
+                                    case 3 :
+                                        System.out.println("Enter Add No");
+                                        Scanner sc = new Scanner(System.in);
+                                        int addno1 = sc.nextInt();
+                                        for (Student S1 : Studarr) {
+                                            if (addno1 == S1.AdNo){
+                                                System.out.println("Details of student with ad no " + addno1 + "is ");
+                                                System.out.println(S1.StudentName);
+                                                System.out.println(S1.AdNo);
+                                                System.out.println(S1.RollNo);
+                                                System.out.println(S1.CollegeName);
+                                                break;
+                                            }
+                                            else {
+                                                System.out.println("Student not found");
+                                            }
+                                        }
+                                        break;
                                 }
                             }
                         }

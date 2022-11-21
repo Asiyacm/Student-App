@@ -69,6 +69,16 @@ import java.util.Scanner;
                                             }
                                         }
                                         break;
+                                    case 4 :
+                                        System.out.println("Enter Student Ad no");
+                                        Scanner xz = new Scanner(System.in);
+                                        int addno2 = xz.nextInt();
+                                        for (Student S1 : Studarr){
+                                            if (addno2 == S1.AdNo){
+                                                Studarr.remove(S1);
+                                            }
+                                        }
+                                        break;
                                 }
                             }
                         }

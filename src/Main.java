@@ -8,9 +8,9 @@ import java.util.Scanner;
             String CollegeName;
 
             public Student(String studentName, int adNo, int rollNo, String collegeName) {
-                StudentName = studentName;
-                AdNo = adNo;
-                RollNo = rollNo;
+                this.StudentName = studentName;
+                this.AdNo = adNo;
+                this.RollNo = rollNo;
                 this.CollegeName = collegeName;
             }
         }

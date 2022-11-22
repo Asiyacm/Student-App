@@ -76,6 +76,12 @@ import java.util.Scanner;
                                         for (Student S1 : Studarr){
                                             if (addno2 == S1.AdNo){
                                                 Studarr.remove(S1);
+                                                System.out.println("Student deleted is:");
+                                                System.out.println(S1.StudentName);
+                                                System.out.println(S1.AdNo);
+                                                System.out.println(S1.RollNo);
+                                                System.out.println(S1.CollegeName);
+                                                break;
                                             }
                                         }
                                         break;

@@ -1,3 +1,5 @@
+import com.google.gson.Gson;
+
 import java.util.ArrayList;
 import java.util.Scanner;
         class Student {
@@ -16,6 +18,7 @@ import java.util.Scanner;
         }
                 public class Main {
                     public static void main(String[] args) {
+                        ArrayList<String> jsonarry = new ArrayList<String>();
                         ArrayList<Student> Studarr = new ArrayList<Student>();
                         while (true) {
                             System.out.println("Select an option \n1.Add Student\n2.View Student\n3.Search Student\n4.Delete Student\n5.Exit");
@@ -39,9 +42,10 @@ import java.util.Scanner;
                                         String gh = XY.next();
                                         Student S = new Student(ab, cd, ef, gh);
                                         Studarr.add(S);
+                                        jsonarry.add(new Gson().toJson(S));
                                         break;
                                     case 2 :
-                                        System.out.println("Employee Details Showing");
+
                                         for (Student std : Studarr) {
                                             System.out.println("Print Student Details " );
                                             System.out.println(std.StudentName);
@@ -84,6 +88,9 @@ import java.util.Scanner;
                                                 break;
                                             }
                                         }
+                                        break;
+                                    case 6:
+                                        System.out.println(jsonarry);
                                         break;
                                 }
                             }
